@@ -16,7 +16,7 @@
     },
     {
       "name": "cw-svg-occlusion-exercise",
-      "description": "Image occlusion exercise. Inner HTML should be an svg and the occlusion parts should have the class 'cw-occlusion-part'."
+      "description": "Image occlusion exercise. Inner HTML should be an svg and the occlusion parts should have the class 'cw-occlusion-part'. Explanations can be put in the 'solution' slot."
     }
   ]
 }
