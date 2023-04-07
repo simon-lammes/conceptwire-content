@@ -1,31 +1,31 @@
 <html>
-<head>
-  <title>Test</title>
-  <meta
-    name="direct-label-ids"
-    content="f0b46d40-2d37-4019-aa30-1319c590d5b8"
-  />
-</head>
-<cw-question-answer-exercise>
-  <div slot="question">
-    <cw-instructions>
-      What is the problem with the following code?
-    </cw-instructions>
-    <cw-info>
-      You are looking at a component that should greet a list of people.
-      It uses the imaginary <code>add-person-form</code> component in which
-      the user can add new people to be greeted. When the user creates a new
-      person, the <code>personAdded</code> event emitter emits that person's name.
-    </cw-info>
-    <cw-shoelace-context>
-      <sl-tab-group>
-        <sl-tab slot="nav" panel="ts">TS</sl-tab>
-        <sl-tab slot="nav" panel="html">HTML</sl-tab>
+  <head>
+    <title>Test</title>
+    <meta
+      name="direct-label-ids"
+      content="f0b46d40-2d37-4019-aa30-1319c590d5b8"
+    />
+  </head>
+  <cw-question-answer-exercise>
+    <div slot="question">
+      <cw-instructions>
+        What is the problem with the following code?
+      </cw-instructions>
+      <cw-info>
+        You are looking at a component that should greet a list of people. It
+        uses the imaginary <code>add-person-form</code> component in which the
+        user can add new people to be greeted. When the user creates a new
+        person, the <code>personAdded</code> event emitter emits that person's
+        name.
+      </cw-info>
+      <cw-shoelace-context>
+        <sl-tab-group>
+          <sl-tab slot="nav" panel="ts">TS</sl-tab>
+          <sl-tab slot="nav" panel="html">HTML</sl-tab>
 
-        <sl-tab-panel name="ts"
-        >
-          <!-- prettier-ignore -->
-          <cw-code>
+          <sl-tab-panel name="ts">
+            <!-- prettier-ignore -->
+            <cw-code>
 export class GreetPeopleComponent {
   people = [];
 
@@ -33,45 +33,45 @@ export class GreetPeopleComponent {
     this.people.push(person);
   }
 }
-          </cw-code>
-        </sl-tab-panel
-        >
-        <sl-tab-panel name="html"
-        >
-          <!-- prettier-ignore -->
-          <cw-code cw-language="html">
+            </cw-code>
+          </sl-tab-panel>
+          <sl-tab-panel name="html">
+            <!-- prettier-ignore -->
+            <cw-code cw-language="html">
 <p>Greetings to</p>
 <ul>
   <li *ngFor="let person of people">{{person}}</li>
 </ul>
 <add-person-form (personAdded)="addPerson($event)"></add-person-form>
           </cw-code>
-        </sl-tab-panel
-        >
-      </sl-tab-group>
-    </cw-shoelace-context>
-  </div>
+          </sl-tab-panel>
+        </sl-tab-group>
+      </cw-shoelace-context>
+    </div>
 
-  <div slot="answer">
-    <cw-short-answer>
-      The reference to <code>this.people</code> is not changed which leads to Angular not updating the UI.
-    </cw-short-answer>
-    When a person is added, the people array is modified, but its reference stays the same.
-    Angular will compare the old <code>this.people</code> with the new <code>this.people</code> during change detection.
-    Since it is simple reference comparison, Angular will think that it has not changed and will not update the component.
-    It is one of those bugs where you would ask yourself why the website is not properly updating.
+    <div slot="answer">
+      <cw-short-answer>
+        The reference to <code>this.people</code> is not changed which leads to
+        Angular not updating the UI.
+      </cw-short-answer>
+      When a person is added, the people array is modified, but its reference
+      stays the same. Angular will compare the old <code>this.people</code> with
+      the new <code>this.people</code> during change detection. Since it is
+      simple reference comparison, Angular will think that it has not changed
+      and will not update the component. It is one of those bugs where you would
+      ask yourself why the website is not properly updating.
 
-    <p style="margin-top: 8px">
-      Instead, the people's array should be reassigned with a modified copy of the previous array. This can be easily done with
-      JavaScript's spread syntax.
-      <!-- prettier-ignore -->
-      <cw-code>
+      <p style="margin-top: 8px">
+        Instead, the people's array should be reassigned with a modified copy of
+        the previous array. This can be easily done with JavaScript's spread
+        syntax.
+        <!-- prettier-ignore -->
+        <cw-code>
 addPerson(person: string) {
   this.people = [...this.people, person];
 }
       </cw-code>
-    </p>
-  </div>
-</cw-question-answer-exercise>
+      </p>
+    </div>
+  </cw-question-answer-exercise>
 </html>
-
