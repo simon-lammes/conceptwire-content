@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>Where to put data transformation logic?</title>
+    <meta
+      name="direct-label-ids"
+      content="f0b46d40-2d37-4019-aa30-1319c590d5b8"
+    />
+  </head>
+  <body>
+    <cw-opinion-exercise>
+      <div slot="question">
+        Say you have some data that you need to transform in a somewhat complex
+        way before rendering it as HTML. Where could you put that logic? Which
+        options do you have and what are their advantages?
+        <cw-example>
+          For example, you might have a list of names that you want to display
+          in a list. But you want every letter that appears at least twice
+          within a given name to be colored green. Therefore, you would first
+          need to determine those letters somewhere.
+        </cw-example>
+      </div>
+      <cw-opinion cw-title="Component">
+        <cw-short-answer>
+          A component usually has the advantage of being very <b>scoped</b>,
+          meaning that it only affects itself and it's relatives but not the
+          whole application.
+        </cw-short-answer>
+        One suggestion would be to always put logic within a component when it
+        is only needed for that component and nowhere else. This has the
+        advantage that is very easy to reason about: When you want to find out
+        about a components behavior, you just have a look at that component and
+        do not have to look at a thousand different places that your component's
+        logic is scattered about. I haven't found a name for the principle, but
+        I feel like it is generally agreed upon that we prefer "local state over
+        global state" and we prefer "local functionally over global
+        functionality if it is only needed locally".
+      </cw-opinion>
+      <cw-opinion cw-title="Pipe">
+        <cw-short-answer>
+          A pipe usually has the advantage of being <b>re-usable</b> and
+          <b>syntactically</b> elegant.
+        </cw-short-answer>
+        If you want to re-use that transformation logic across multiple places,
+        and you are able to put it in a pipe that is easy to use, then pipes are
+        a very elegant solution. But when your pipe has complex data types and
+        inputs, it <em>might</em> become cumbersome because dealing with complex
+        data types in your HTML templates - where pipes are used - can get ugly.
+      </cw-opinion>
+      <cw-opinion cw-title="Service">
+        <cw-short-answer>
+          A service usually has the advantage of being <b>re-usable</b> and
+          <b>easily-accessible</b> through dependency injection.
+        </cw-short-answer>
+        Although pipes and services are usually very different, in this example
+        they are somewhat similar. They both offer
+        <b>globally accessible</b> data transformation logic. One difference is
+        that a service can be used in your TypeScript files more easily because
+        it usually can just be injected into your component. This is because
+        services are provided globally (in 'root') by default. A pipe needs to
+        be manually provided in order to inject it.
+      </cw-opinion>
+    </cw-opinion-exercise>
+  </body>
+</html>
