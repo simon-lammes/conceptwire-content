@@ -12,17 +12,17 @@
       <div slot="question">
         Why could someone consider the following Angular component problematic?
         <!-- prettier-ignore -->
-        <cw-code>
+        <cw-code id="567e749a-239f-4163-8b23-9d2230bf6e75">
 @Component({
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `
-    <ng-container *ngIf="currentUsername; else noUsername"
-      >Hello, {{ currentUsername }}!</ng-container
-    >
-    <ng-template #noUsername
-      >Content to render when condition is false.</ng-template
-    >
-  `,
+changeDetection: ChangeDetectionStrategy.OnPush,
+template: `
+  <ng-container *ngIf="currentUsername; else noUsername">
+    Hello, {{ currentUsername }}!
+  </ng-container>
+  <ng-template #noUsername>
+    Content to render when condition is false.
+  </ng-template>
+`,
 })
 export class GreetingComponent {
   currentUsername?: string;
