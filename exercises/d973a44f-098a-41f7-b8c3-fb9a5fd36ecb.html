@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Test</title>
+    <title>Angular Dirty Checking uses Reference Comparisons</title>
     <meta
       name="direct-label-ids"
       content="f0b46d40-2d37-4019-aa30-1319c590d5b8"
@@ -25,7 +25,7 @@
 
           <sl-tab-panel name="ts">
             <!-- prettier-ignore -->
-            <cw-code>
+            <cw-code id="33346d6d-a5a6-4d44-a1b6-a5c6d75d4078">
 export class GreetPeopleComponent {
   people = [];
 
@@ -37,7 +37,7 @@ export class GreetPeopleComponent {
           </sl-tab-panel>
           <sl-tab-panel name="html">
             <!-- prettier-ignore -->
-            <cw-code cw-language="html">
+            <cw-code cw-language="html" id="8e56e5fd-7429-4c77-b65a-fbd45e983c60">
 <p>Greetings to</p>
 <ul>
   <li *ngFor="let person of people">{{person}}</li>
@@ -66,7 +66,7 @@ export class GreetPeopleComponent {
         the previous array. This can be easily done with JavaScript's spread
         syntax.
         <!-- prettier-ignore -->
-        <cw-code>
+        <cw-code id="1b6aea06-4f2e-4745-9119-4d45e71505bf">
 addPerson(person: string) {
   this.people = [...this.people, person];
 }
