@@ -1,7 +1,10 @@
 {
   "id": "f1251960-cf50-4a02-8c09-1680dc335472",
-  "title": "Wakeboarding",
+  "title": "Wakeboarding and Waterskiing",
   "children": [
+    {
+      "childId": "0d67a367-b497-44f9-b8f0-3949a8335c17"
+    },
     {
       "childId": "b09d378c-9be9-4a9b-af53-155951fc8a42"
     }
