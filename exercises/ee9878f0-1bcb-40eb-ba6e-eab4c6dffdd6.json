@@ -1,0 +1,24 @@
+{
+  "id": "ee9878f0-1bcb-40eb-ba6e-eab4c6dffdd6",
+  "conceptIds": [
+    "8c3a2da6-71af-415b-9670-8140c6aa21e6"
+  ],
+  "root": {
+    "id": "61b7071c-3fb8-4923-996b-0a6f6ef2096e",
+    "type": "questionAnswerExercise",
+    "answerNodes": [
+      {
+        "id": "9a689f78-2f28-411e-a1c6-c654e62349e6",
+        "type": "markdown",
+        "text": "Zippers should be **closed** because, otherwise, their teeth could damage other clothers. Additional, the zipper itself could take damage."
+      }
+    ],
+    "questionNodes": [
+      {
+        "id": "fbcae838-1e4e-4d1d-936d-659b216cbe53",
+        "type": "markdown",
+        "text": "When washing clothes with a zipper, should the zipper be opened or closed?"
+      }
+    ]
+  }
+}

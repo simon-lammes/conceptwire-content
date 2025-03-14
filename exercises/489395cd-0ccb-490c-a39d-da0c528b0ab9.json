@@ -1,0 +1,29 @@
+{
+  "id": "489395cd-0ccb-490c-a39d-da0c528b0ab9",
+  "conceptIds": [
+    "8c3a2da6-71af-415b-9670-8140c6aa21e6"
+  ],
+  "root": {
+    "id": "8091b5f6-0263-47de-b1d1-2ab60318565c",
+    "type": "setExercise",
+    "elements": [
+      {
+        "id": "1c5b1fdb-9250-4794-b01e-2bee9a66548f",
+        "descriptionNodes": [
+          {
+            "id": "cf1495db-0a95-4cd3-923d-8c6532c6c005",
+            "type": "markdown",
+            "text": "###### Leaving the door open\n\nWhen the door is opened a tad, moisture can exit the washing machine.\n\nIf moisture is trapped in the washing machine, it can promote the formation of bacteria."
+          }
+        ]
+      }
+    ],
+    "descriptionNodes": [
+      {
+        "id": "76bffdeb-5c96-4107-8ba0-67aeafcc81b9",
+        "type": "markdown",
+        "text": "What should you do on a washing machine after you have taken out the washed clothes?"
+      }
+    ]
+  }
+}

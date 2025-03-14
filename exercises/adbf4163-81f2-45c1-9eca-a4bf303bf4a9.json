@@ -1,0 +1,19 @@
+{
+  "id": "adbf4163-81f2-45c1-9eca-a4bf303bf4a9",
+  "root": {
+    "id": "9bec5171-c35e-4c3d-a819-ba33fa647801",
+    "type": "proofreadingExercise",
+    "correctText": "I will go to the store and buy an MP3 player.",
+    "incorrectText": "I will go to the store and buy a MP3 player.",
+    "explanationNodes": [
+      {
+        "id": "ac22a405-238b-4cf2-bdd2-b815f39aaeba",
+        "type": "markdown",
+        "text": "We use the word \"an\" instead \"a\" when the following word starts with a vowel.\n\nThis improves the sound and ease of speaking.\n\nTherefore, not the spelling, but the pronounciation matters. MP3 player is pronounced \"em P 3\" so it \"kind of\" starts with a vowel."
+      }
+    ]
+  },
+  "conceptIds": [
+    "14b9a129-12aa-4db7-929a-2975ecaedc33"
+  ]
+}

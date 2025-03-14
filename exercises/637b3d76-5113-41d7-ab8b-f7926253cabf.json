@@ -1,0 +1,39 @@
+{
+  "id": "637b3d76-5113-41d7-ab8b-f7926253cabf",
+  "root": {
+    "id": "87a9ff5a-536a-4926-b55a-dc8a39c4b8fd",
+    "type": "setExercise",
+    "elements": [
+      {
+        "id": "1c1f482f-1dbf-4618-a346-fc33b157af28",
+        "descriptionNodes": [
+          {
+            "id": "4e3ac535-38c4-4bfa-9e60-492f21e207ba",
+            "type": "markdown",
+            "text": "###### Cleaning the lint filter\n\nThe lint filter should be cleaned regularly to prevent the development of bacteria and bad smells."
+          }
+        ]
+      },
+      {
+        "id": "f44909ff-942d-4233-b895-f115b954d344",
+        "descriptionNodes": [
+          {
+            "id": "75053b1f-57b7-4f03-910a-5fd649ba09f2",
+            "type": "markdown",
+            "text": "###### Clean rubber seals\n\nThe rubber seals near the door of the washing machine can accumulate dirt and bacteria. It can be cleaned with a cloth with diluted citric acid.\n\nI would only use citric acid if I wash afterward because I am not sure whether it could damage the rubber otherwise in the long term."
+          }
+        ]
+      }
+    ],
+    "descriptionNodes": [
+      {
+        "id": "919c6826-c350-45e9-8956-222c97f78730",
+        "type": "markdown",
+        "text": "What maintenance tasks should owners of washing machines keep in mind?"
+      }
+    ]
+  },
+  "conceptIds": [
+    "8c3a2da6-71af-415b-9670-8140c6aa21e6"
+  ]
+}

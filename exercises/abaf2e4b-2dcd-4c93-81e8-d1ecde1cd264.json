@@ -1,0 +1,18 @@
+{
+  "id": "abaf2e4b-2dcd-4c93-81e8-d1ecde1cd264",
+  "content": {
+    "type": "singleActivatorShortcut",
+    "activator": {
+      "trigger": 39,
+      "control": true,
+      "shift": true,
+      "alt": false,
+      "meta": false
+    },
+    "name": "Delete Line",
+    "description": {
+      "type": "column",
+      "children": []
+    }
+  }
+}

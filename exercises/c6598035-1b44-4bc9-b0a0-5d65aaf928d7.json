@@ -1,0 +1,18 @@
+{
+  "id": "c6598035-1b44-4bc9-b0a0-5d65aaf928d7",
+  "content": {
+    "type": "singleActivatorShortcut",
+    "activator": {
+      "trigger": 55,
+      "control": true,
+      "shift": false,
+      "alt": false,
+      "meta": false
+    },
+    "name": "Go to user settings",
+    "description": {
+      "type": "column",
+      "children": []
+    }
+  }
+}

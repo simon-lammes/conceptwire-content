@@ -1,0 +1,19 @@
+{
+  "id": "9b8b37ab-d501-4790-9dc9-c288667a2881",
+  "root": {
+    "id": "fa6a802e-31f0-405d-a6a5-0cb0482c7554",
+    "type": "proofreadingExercise",
+    "correctText": "Under the hood, this application communicates with the aforementioned server.",
+    "incorrectText": "Under the hood, this application communicates with the beforementioned server.",
+    "explanationNodes": [
+      {
+        "id": "2bb00111-f796-41d8-a962-9ae0a7ee8ade",
+        "type": "markdown",
+        "text": "The word _aforementioned_ is the correct word here. It shows that you are referencing a tring that you talked about before."
+      }
+    ]
+  },
+  "conceptIds": [
+    "14b9a129-12aa-4db7-929a-2975ecaedc33"
+  ]
+}
